@@ -14,12 +14,6 @@ public class MergeSort {
         sortedMerge(lo,mid,hi);
     }
     
-    private void swap(int i, int j){
-        int tmp = array[i];
-        array[i] = array[j];
-        array[j] = tmp;
-    }
-    
     private void sortedMerge(int lo, int mid, int hi) {
         int i,j,k;
         int n1 = mid - lo + 1, n2 = hi - mid;
@@ -60,6 +54,7 @@ public class MergeSort {
             k += 1;
         }
     }    
+    
     
     public void printArray() {
         for(int i=0;i<array.length;i++) {

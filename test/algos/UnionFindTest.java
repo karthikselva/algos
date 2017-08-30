@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package algos;
 
 import org.junit.After;
@@ -12,34 +7,8 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
-/**
- *
- * @author Karthik
- */
 public class UnionFindTest {
-    
-    public UnionFindTest() {
-    }
-    
-    @BeforeClass
-    public static void setUpClass() {
-    }
-    
-    @AfterClass
-    public static void tearDownClass() {
-    }
-    
-    @Before
-    public void setUp() {
-    }
-    
-    @After
-    public void tearDown() {
-    }
 
-    /**
-     * Test of findSet method, of class UnionFind.
-     */
     @Test
     public void testFindSet() {
         System.out.println("findSet");
@@ -52,9 +21,6 @@ public class UnionFindTest {
         assertEquals(expResult, result);
     }
 
-    /**
-     * Test of isSameSet method, of class UnionFind.
-     */
     @Test
     public void testIsSameSet() {
         System.out.println("isSameSet");
@@ -68,9 +34,6 @@ public class UnionFindTest {
         assertEquals(expResult, result);
     }
 
-    /**
-     * Test of unionSet method, of class UnionFind.
-     */
     @Test
     public void testUnionSet() {
         System.out.println("unionSet");
