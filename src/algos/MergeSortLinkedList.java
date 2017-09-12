@@ -32,6 +32,7 @@ class Node {
         Node hare = this.next, tortoise = this;
         while(hare != null) {
             hare = hare.next;
+            // Was making mistake by off by one 
             if(hare != null) {
                 hare = hare.next;
                 tortoise = tortoise.next;

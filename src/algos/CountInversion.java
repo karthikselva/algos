@@ -33,6 +33,7 @@ public class CountInversion {
         k = lo;        
         while(i<n1 && j <n2) {
             if(larr[i] > rarr[j]) {
+                // Was making mistake by off by one                 
                 inversion = inversion + (mid - i - lo +  1);
                 array[k] = rarr[j];
                 j += 1;
@@ -43,6 +44,11 @@ public class CountInversion {
             }
             k += 1;
         }
+        // Take scenario larr = [1,18,19], rarr = [7,8]
+        //  1,7,8 and remaining elements in larr are lost
+        // now i will be lagging by 2 to n1 
+        // Copy rest of elements from larr to main array
+        
         while(i < n1) {
             array[k] = larr[i];
             k += 1;
