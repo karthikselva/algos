@@ -7,14 +7,14 @@ public class HeapSort {
     
     public int [] sort() {
         int n = array.length, tmp;
-        for(int i=n/2-1; i >= 0; i--){
+        for(int i=(n/2-1); i >= 0; i--){
             heapify(n,i);
         }
         
         for(int i = (n-1); i >= 0; i--) {
             tmp = array[0];
-            array[i] = array[0];
-            array[0] = tmp;
+            array[0] = array[i];
+            array[i] = tmp;
             heapify(i,0);
         }
         return array;
